@@ -41,11 +41,9 @@ For example, with a 100 MHz clock at 9600 baud: `100_000_000 / 9600 ≈ 10417` c
 | Module | Description |
 |---|---|
 | `uart_top` | Top level. Instantiates the baud generator, transmitter and receiver and connects them to the board I/O. |
-| `baud_rate_generator` | Produces the baud tick from the system clock. |
-| `uart_tx` | Transmitter core. Loads `internal_reg` and shifts it out serially. |
-| `uart_rx` | Receiver core. Detects the start bit, samples the data bits and outputs the received byte. |
-
-> Adjust the module names above to match your source files.
+| `baud_gen` | Produces the baud tick from the system clock. |
+| `uart_transmitter` | Transmitter core. Loads `internal_reg` and shifts it out serially. |
+| `uart_receiver` | Receiver core. Detects the start bit, samples the data bits and outputs the received byte. |
 
 ## Ports
 
@@ -77,9 +75,6 @@ The design was implemented and tested directly on the FPGA board:
 - **Receiver:** characters sent from the terminal were received and decoded correctly on the board.
 
 ## Possible improvements
-
-- Switch debouncing for the confirm button
 - Configurable baud rate and data width through parameters
-- Parity bit support
 - FIFO buffering for transmit and receive
-- Framing and overrun error flags on the receiver
+
