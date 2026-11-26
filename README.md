@@ -85,6 +85,7 @@ All receiving 8 bits are mapped onto led starting with LSB onto LD0 and MSB onto
 
 <div align="center">
   <img width="1280" height="720" alt="sample_1" src="https://github.com/user-attachments/assets/dceef426-38c7-41b3-b512-714f50f00b0a" />
+  <img width="653" height="406" alt="Screenshot 2026-11-26 105511" src="https://github.com/user-attachments/assets/b6ffa08c-4b01-4510-b562-3935064e922f" />
   <p>Image shows 'B' being transmitted to PC</p>
 </div>
 
