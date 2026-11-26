@@ -78,3 +78,20 @@ The design was implemented and tested directly on the FPGA board:
 - Configurable baud rate and data width through parameters
 - FIFO buffering for transmit and receive
 
+# Demo
+
+## How to interpret the bits recieved on the board?
+All receiving 8 bits are mapped onto led starting with LSB onto LD0 and MSB onto LD7
+
+<div align="center">
+  <img width="1280" height="720" alt="sample_1" src="https://github.com/user-attachments/assets/dceef426-38c7-41b3-b512-714f50f00b0a" />
+  <p>Image shows 'B' being transmitted to PC</p>
+</div>
+
+<br>
+
+https://github.com/user-attachments/assets/e52bc14a-41d7-43f3-8e56-eb42b8a43224
+
+<div align="center">
+  <p>Receiving 'x', 'd' &amp; 'a' from PC</p>
+</div>
