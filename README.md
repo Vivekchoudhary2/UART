@@ -36,6 +36,20 @@ CLKS_PER_BIT = f_clk / baud_rate
 
 For example, with a 100 MHz clock at 9600 baud: `100_000_000 / 9600 ≈ 10417` clock cycles per bit.
 
+## Design hierarchy
+
+```
+                         uart_top.v
+                              |
+        +---------------------+---------------------+
+        |                     |                     |
+   baud_gen.v        uart_transmitter.v      uart_receiver.v
+                              |                     |
+                       uart_tx_core.v        uart_rx_core.v
+
+uart_top.xdc : pin constraints for uart_top
+```
+
 ## Modules
 
 | Module | Description |
@@ -80,12 +94,9 @@ The design was implemented and tested directly on the FPGA board:
 
 # Demo
 
-## How to interpret the bits recieved on the board?
-All receiving 8 bits are mapped onto led starting with LSB onto LD0 and MSB onto LD7
-
 <div align="center">
   <img width="1280" height="720" alt="sample_1" src="https://github.com/user-attachments/assets/dceef426-38c7-41b3-b512-714f50f00b0a" />
-  <img width="653" height="406" alt="Screenshot 2026-11-26 105511" src="https://github.com/user-attachments/assets/b6ffa08c-4b01-4510-b562-3935064e922f" />
+  <img width="653" height="406" alt="Screenshot 2026-11-26 105511" src="https://github.com/user-attachments/assets/5a6ef804-431b-4838-a8db-027cb83f6d91" />
   <p>Image shows 'B' being transmitted to PC</p>
 </div>
 
