@@ -42,14 +42,14 @@ Status LEDs show whether the transmitter is idle (`READY_LED`) or sending (`LED0
 | `uart_top.xdc` | — | Basys 3 pin and clock constraints |
 
 ```
-                         uart_top.v
-                              |
-                  +-----------+-----------+
-                  |                       |
-          uart_transmitter.v        uart_receiver.v
-                  |                       |
-        +---------+---------+   +---------+---------+
-        |                   |   |                   |
+                               uart_top.v
+                                   |
+                  +----------------+---------------+
+                  |                                |
+          uart_transmitter.v                 uart_receiver.v
+                  |                                |
+        +---------+---------+            +---------+---------+
+        |                   |            |                   |
     baud_gen.v       uart_tx_core.v   baud_gen.v   uart_rx_core.v
    (1x, 9600)                        (16x, 153600)
 
