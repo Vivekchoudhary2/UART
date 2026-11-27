@@ -421,7 +421,18 @@ Every state machine has a `default` branch to `IDLE`, so an illegal state would 
 **18. On-board observability.**
 The received byte is shown in binary on LD0 to LD7, the transmitter state on LD14 and LD15, and framing errors on LD13. This allowed the design to be verified on the board directly with a terminal, without extra instrumentation.
 
-## 9. Known limitations and possible improvements
+
+## 9. Demonstration
+<div align="center"> <img width="1280" height="720" alt="sample_1" src="https://github.com/user-attachments/assets/dceef426-38c7-41b3-b512-714f50f00b0a" />
+<img width="653" height="406" alt="Screenshot 2026-11-26 105511" src="https://github.com/user-attachments/assets/afabd2db-d3b2-405e-a401-0a909dae7f96" />
+
+  <p>Image shows 'B' being transmitted to PC</p> </div> <br>
+
+https://github.com/user-attachments/assets/e52bc14a-41d7-43f3-8e56-eb42b8a43224
+
+<div align="center"> <p>Receiving 'x', 'd' &amp; 'a' from PC</p> </div>
+
+## 10. Known limitations and possible improvements
 
 | Item | Detail |
 |---|---|
