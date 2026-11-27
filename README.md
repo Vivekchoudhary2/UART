@@ -432,7 +432,13 @@ https://github.com/user-attachments/assets/e52bc14a-41d7-43f3-8e56-eb42b8a43224
 
 <div align="center"> <p>Receiving 'x', 'd' &amp; 'a' from PC</p> </div>
 
-## 10. Known limitations and possible improvements
+## 10. Tools
+
+- Verilog HDL
+- Xilinx Vivado 2024.2
+- Digilent Basys 3 (Artix-7 XC7A35T-1CPG236C)
+
+## 11. Known limitations and possible improvements
 
 | Item | Detail |
 |---|---|
